@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button exercise</title>
+    <style>
+        /* Primary red subscribe button: bold color, white text, and fixed size */
+        .subscribe-button {
+            background-color: rgb(200, 0, 0);
+            color: white;
+            border: none;
+            height: 36px;
+            width: 105px;
+            border-radius: 2px;
+            cursor: pointer; /* show pointer on hover to indicate clickability */
+            margin-right: 8px; /* space to the right when next to other buttons */
+            transition: opacity 0.15s;
+        }
+
+        /* Slightly dim the button on hover to provide visual feedback */
+        .subscribe-button:hover {
+            opacity: 0.8;
+        }
+
+        /* More pronounced dimming while the button is being pressed */
+        .subscribe-button:active {
+            opacity: 0.5;
+        }
+
+
+
+        /* Secondary outline 'join' button: white background with blue border */
+        .join-button {
+            background-color: white;
+            border:1px solid rgb(41, 118, 211);
+            color: rgb(41, 118, 211);
+            height: 36px;
+            width: 62px;
+            border-radius: 2px;
+            cursor: pointer; /* indicates interactive element */
+            transition: background-color 0.15s,
+            color 0.15s;
+        }
+
+
+        .join-button:hover {
+            background-color: rgb(41, 118, 211);
+            color: white;
+        }
+
+        .join-button:active {
+            opacity: 0.8
+        }
+
+
+        /* Rounded blue 'tweet' button: prominent, circular-ish appearance */
+        .tweet-button {
+            background-color: rgb(2, 158, 255);
+            color: white;
+            border: none;
+            height: 36px;
+            width: 74px;
+            border-radius: 18px; /* makes the button pill-shaped */
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+            margin-left: 8px; /* space to the left when next to other buttons */
+            transition: box-shadow 0.15s;
+
+        }
+
+        .tweet-button:hover {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <button class="subscribe-button">SUBSCRIBE</button>
+    <button class="join-button">JOIN</button>
+    <button class="tweet-button">Tweet</button>
+
+</body>
+</html>
